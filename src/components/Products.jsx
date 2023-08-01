@@ -28,6 +28,7 @@ function Products() {
                 placeholder='Filter'
                 onChange={handleFilterChange}
             />
+            <span>{count}</span>
 
             <div className='products-container'>
                 {filteredProducts.map((item, id) => (
@@ -38,9 +39,6 @@ function Products() {
                     </div>
                 ))}
             </div>
-            <br />
-            <br />
-            <span>{count}</span>
         </div>
     );
 }
